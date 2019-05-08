@@ -1,0 +1,9 @@
+<div class="pizza">
+  <div class="base"></div>
+  <div class="toppings" *ngFor="let topping of toppings; let i = index">
+    <svg-icon
+      [src]="'../../assets/' + topping + '.svg'"
+      [svgStyle]="{ 'width.px': 65, transform: translate(i) }"
+    ></svg-icon>
+  </div>
+</div>

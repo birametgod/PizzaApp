@@ -1,0 +1,25 @@
+.pizza {
+  background-image: url('/assets/board.svg');
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  margin-bottom: 20px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.base {
+  background-image: url('/assets/base.svg');
+  height: 81px;
+  background-repeat: no-repeat;
+  background-position: 51%;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.toppings {
+  position: absolute;
+  z-index: 100;
+  top: -11%;
+  left: 51%;
+}

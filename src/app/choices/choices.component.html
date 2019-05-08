@@ -1,0 +1,15 @@
+<div fxLayout="column" fxLayoutAlign="space-between center">
+  <div fxLayout="row" fxLayoutAlign="space-evenly center">
+    <div class="name" *ngFor="let topping of toppings">
+      <div (click)="selectToppings(topping)">
+        <svg-icon [src]="'../../assets/' + topping + '.svg'" [svgStyle]="{ 'width.px': 90 }"></svg-icon>
+        {{ topping }}
+      </div>
+    </div>
+  </div>
+
+  <div fxFlex="20">
+    <button mat-raised-button color="warn" (click)="createPizza()">Create Pizza</button>
+  </div>
+</div>
+<div #pizza></div>
