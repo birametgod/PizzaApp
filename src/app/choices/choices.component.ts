@@ -34,7 +34,6 @@ export class ChoicesComponent implements OnInit {
   }
 
   selectToppings(topping) {
-    console.log(topping);
     if (this.selectedToppings.indexOf(topping) === -1) {
       this.selectedToppings.push(topping);
     } else {

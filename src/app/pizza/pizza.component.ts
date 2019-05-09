@@ -1,4 +1,3 @@
-import { PizzaService } from './../pizza.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
